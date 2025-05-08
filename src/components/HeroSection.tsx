@@ -40,50 +40,25 @@ const HeroSection: React.FC = () => {
           
           <div className="relative">
             <div className="bg-white rounded-2xl shadow-xl p-6 max-w-lg mx-auto">
-              <div className="flex items-center space-x-4 mb-6">
-                <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white">AI</div>
-                <div>
-                  <h3 className="font-semibold">AI Sales Assistant</h3>
-                  <p className="text-sm text-gray-500">Online now</p>
-                </div>
-              </div>
-              
               <div className="space-y-4 mb-6">
-                <div className="bg-gray-100 rounded-lg p-3 max-w-[80%]">
-                  <p className="text-gray-800">Hi there! I'm your AI Sales Assistant. How can I help you today?</p>
-                  <p className="text-xs text-gray-500 mt-1">10:03 AM</p>
-                </div>
-                
-                <div className="bg-primary/10 rounded-lg p-3 max-w-[80%] ml-auto">
-                  <p className="text-gray-800">I'm interested in your product. Can you tell me more about pricing?</p>
-                  <p className="text-xs text-gray-500 mt-1">10:04 AM</p>
-                </div>
-                
-                <div className="bg-gray-100 rounded-lg p-3 max-w-[80%]">
-                  <p className="text-gray-800">I'd be happy to discuss our pricing options. We have several plans starting at $99/month. Could you tell me a bit about your company size and needs so I can recommend the best option?</p>
-                  <p className="text-xs text-gray-500 mt-1">10:04 AM</p>
-                </div>
-                
-                <div className="bg-primary/10 rounded-lg p-3 max-w-[80%] ml-auto">
-                  <p className="text-gray-800">We have about 50 employees and are looking for a solution to manage our sales pipeline better.</p>
-                  <p className="text-xs text-gray-500 mt-1">10:05 AM</p>
-                </div>
-                
-                <div className="bg-gray-100 rounded-lg p-3 max-w-[80%] animate-pulse">
-                  <p className="text-gray-800">Thanks for sharing that! For a team of your size, I'd recommend our Business plan at $199/month which includes...</p>
-                </div>
-              </div>
-              
-              <div className="relative">
-                <input 
-                  type="text" 
-                  placeholder="Type your message..." 
-                  className="w-full border border-gray-200 rounded-full py-3 px-4 pr-12 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-transparent"
+                <p className="text-lg font-medium text-gray-800">
+                  Aaron, the Inbound SDR
+                </p>
+                <p className="text-gray-600">
+                  Aaron handles every form submission or demo request instantly, qualifying and routing leads to the right human, so your reps can stay focused on selling.
+                </p>
+                <img 
+                  src="https://www.artisan.co/_next/image?url=%2Fassets%2Faaron.webp&w=1080&q=75" 
+                  alt="Aaron, the Inbound SDR" 
+                  className="rounded-lg"
                 />
-                <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-primary text-white rounded-full p-2">
-                  <ArrowRight size={16} />
-                </button>
               </div>
+              <ul className="list-disc list-inside text-gray-600 space-y-2">
+                <li>Responds in real-time to form fills and calendar bookings</li>
+                <li>Uses routing logic to send the right leads to the right reps</li>
+                <li>Applies qualification filters to eliminate noise</li>
+                <li>Frees your team from manual lead triage and follow-up</li>
+              </ul>
             </div>
             
             {/* Decorative elements */}
